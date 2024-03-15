@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="text-center mt-2" style="color: rgb(194, 114, 114);">My jQuery to do list</h1>
+      <form action="" class="col-12 col-md-8 col-lg-5 mx-auto">
+        <label for="todo" class="mt-4 mb-3">insert new todo</label>
+        <input class="form-control" id="todo" type="text" name="todo"/>
+        <button type="submit" id="submit" class="btn btn-primary mt-3">submit</button>
+        <button type="button" id="clear" class="btn btn-danger mt-3">clear</button>
+      </form>
+      <ul class="list-unstyled my-4 col-12 col-md-8 col-lg-5 mx-auto" id="todoContainer"></ul>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="module" src="script.js"></script>
+  </body>
+</html>
